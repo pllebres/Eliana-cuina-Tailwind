@@ -1,0 +1,54 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import variables
+ */
+ @tailwind base;
+ @tailwind components;
+
+@import "variables";
+
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+@import "layouts/home";
+
+
+
+/**
+ * Do NOT include anything else in this file!
+ */
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+      @apply w-full text-[#212529] bg-[#fefcfc] border-2 border-[#212529] py-5 px-4 my-10 font-sans font-bold text-base no-underline shadow-[2px_2px_#212529,_inset_2px_2px_#fefcfc,_inset_1px_1px_#212529] transition-shadow duration-300 hover:shadow-[5px_5px_#212529,_inset_5px_5px_#fefcfc,_inset_1px_1px_#212529];
+    }
+
+    .title-date {
+        @apply max-w-80 bg-gray-600 text-8xl font-semibold text-left mt-10 mb-10;
+    }
+
+    .title-portada {
+      @apply text-4xl font-serif font-semibold text-center text-elired mt-10 mb-10;
+  }
+
+  .title {
+    @apply text-5xl font-semibold text-center mt-10 mb-10;
+}
+
+  }
